@@ -1,3 +1,7 @@
+//  THIS ALGORITHM IS USEFUL WHEN ARRAY SIZE IS 
+//  SHORT
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
