@@ -31,14 +31,15 @@ using namespace std;
 unsigned long long fact(int n)
 {
 	const unsigned int M = 1000000007;
+
 	unsigned long long f = 1;
-
 	for (int i = 1; i <= n; i++)
-		f = f * i; // WRONG APPROACH as
-					// f may exceed (2^64 - 1)
-
-	return f % M;
+		f = (f*i) % M; // Now f never can
+						// exceed 10^9+7
+	return f;
 }
+
+// This code is contributed by Shubham Singh
 
 
 
@@ -49,7 +50,7 @@ int nCr(int n, int r){
     unsigned long long int a=fact(n-r);
     unsigned long long int k=fact(r);
 
-    unsigned long long int ss=w/a;
+    unsigned long long  ss=w/a;
 
 
 
@@ -61,7 +62,7 @@ int nCr(int n, int r){
     cout<<"k = "<<k<<endl;
     cout<<"ss = "<<ss<<endl;
       
-    unsigned long long int ans=ss*1/k;
+    unsigned long long  ans=ss*1/k;
        
        return ans;
 }
@@ -69,7 +70,7 @@ int nCr(int n, int r){
 int main()
 {
 
-       int k= nCr(15,3);
+       int k= nCr(15 ,3);
         
         cout<<k<<endl;
         return 0;
