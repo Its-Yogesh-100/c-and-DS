@@ -14,6 +14,7 @@ int* reverse(int arr[],int size)
         end--;
 
     }
+    
 
     return arr;
     cout<<arr;
