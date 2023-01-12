@@ -1,13 +1,22 @@
 #include<stdio.h>
 
+void swap(int*,int*);
 
+void swap(int *a,int *b){
+
+
+    int temp;
+    temp=*a;
+    *a=*b;
+   *b=temp;
+}
 int main()
 {
 
-    int arr[]={10,20,30,40};
 
- int   k=  printf("%d\n",&arr);
-    printf("hello world");
+int a=0,b=1;
+    swap(&a,&b);
 
-      return 0;
+    printf("%d %d",a,b);
+ 
 }
