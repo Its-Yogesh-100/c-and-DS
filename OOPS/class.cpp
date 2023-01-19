@@ -13,48 +13,70 @@ using namespace std;
 // GETTERS AND SETTERS USED TO ACCESS
 // VARIABLE OUTHSIDE THE CLASS
 
-class Hero
-{
+// class Hero
+// {
 
-private:
-  int health;
+// private:
+//   int health;
 
-public:
-  int level;
+// public:
+//   int level;
 
-  void print()
-  {
-    cout << "HELLO";
-  }
+//   void print()
+//   {
+//     cout << "HELLO";
+//   }
 
-  int gethealth()
-  {
-    return health;
-  }
+//   int gethealth()
+//   {
+//     return health;
+//   }
 
-  void setHealth(int h)
-  {
+//   void setHealth(int h)
+//   {
     
-    health=h;
-  }
-};
-int main()
-{
-  Hero h1;
+//     health=h;
+//   }
+// };
+// int main()
+// {
+//   Hero h1;
 
-  h1.setHealth(10);
+//   h1.setHealth(10);
   
 
-  Hero *h2=new Hero;
+//   Hero *h2=new Hero;
 
-  cout<<h2->gethealth()<<endl;
+//   cout<<h2->gethealth()<<endl;
 
-  h2->setHealth(80);
+//   h2->setHealth(80);
 
-  cout<<h2->gethealth()<<endl;
+//   cout<<h2->gethealth()<<endl;
 
-  cout<<sizeof(h1);
+//   cout<<sizeof(h1);
+//   return 0;
+// }
+
+
+class Animal{
+
+  public:
+  string name;
+  int legs;
+  
+  Animal()
+  {
+    cout<<"Animal constructor";
+  }
+};
+
+int main()
+{
+  Animal a;
+
+
   return 0;
 }
 
 
+// why we use constructor in c++?   
