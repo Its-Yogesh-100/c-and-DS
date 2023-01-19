@@ -34,6 +34,7 @@ public:
 
   void setHealth(int h)
   {
+    
     health=h;
   }
 };
@@ -42,7 +43,18 @@ int main()
   Hero h1;
 
   h1.setHealth(10);
-  cout << h1.gethealth()<< endl;
-  cout << h1.level << endl;
+  
+
+  Hero *h2=new Hero;
+
+  cout<<h2->gethealth()<<endl;
+
+  h2->setHealth(80);
+
+  cout<<h2->gethealth()<<endl;
+
+  cout<<sizeof(h1);
   return 0;
 }
+
+
