@@ -21,16 +21,28 @@ private:
 
 public:
   int level;
+
   void print()
   {
     cout << "HELLO";
+  }
+
+  int gethealth()
+  {
+    return health;
+  }
+
+  void setHealth(int h)
+  {
+    health=h;
   }
 };
 int main()
 {
   Hero h1;
 
-  cout << h1.health << endl;
+  h1.setHealth(10);
+  cout << h1.gethealth()<< endl;
   cout << h1.level << endl;
   return 0;
 }
