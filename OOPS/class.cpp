@@ -75,6 +75,7 @@ class Animal{
   int legs;
 
 
+ // copy constructor
   Animal(Animal& obj)
   {
     cout<<"copy constructor called "<<endl;
@@ -82,6 +83,7 @@ class Animal{
     this->name=obj.name;
   }
   
+  // parametric constructor
   Animal(int legs,string name)
   {
     this->legs=legs;
@@ -90,18 +92,38 @@ class Animal{
     cout<<this->name<<endl;
     cout<<this->legs<<endl;
   }
+
+  // deconstructor
+
+   ~Animal()
+   {
+    cout<<"deconstrucotr called"<<endl;
+   }
+ 
+
 };
 
 int main()
 {
+  // Statically allocated objects 
+  // deconstructor automatically called
   Animal a(4,"cow");
 
   Animal b(a);
+
+  // dynamically allcoated objects 
+  // deconstructor manually callled
+
+  Animal *c=new Animal(4,"lion");
+
+  delete c;
  
 
 
   cout<<b.legs<<endl;
   cout<<b.name<<endl;
+
+  
 
 
 
@@ -109,4 +131,4 @@ int main()
 }
 
 
-// why we use constructor in c++?   
+// tilt sign in c++?    
