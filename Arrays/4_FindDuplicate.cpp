@@ -27,8 +27,11 @@ int main()
 {
     int arr[5]={10,20,30,40,30};
 
-    int k=duplicate(arr,5);
+    // int k=duplicate(arr,5);
+
+    int k=2^2^6;
 
     cout<<k;
+    // cout<<k;
 return 0;
 }
