@@ -60,29 +60,49 @@ using namespace std;
 
 //  this is a pointer that is 
 //  pointing to object
+
+
+// copy constructor
+
+
+// This operator when objet dynamically allocated
+// Dot operator when object of class is statically allocated
+
 class Animal{
 
   public:
   string name;
   int legs;
-  
-  Animal()
-  {
-    cout<<"Animal constructor";
-  }
 
-  Animal(string type)
+
+  Animal(Animal& obj)
   {
-    cout<<"this is name"<<endl;
-      this->name=type;
+    cout<<"copy constructor called "<<endl;
+    this->legs=obj.legs;
+    this->name=obj.name;
+  }
+  
+  Animal(int legs,string name)
+  {
+    this->legs=legs;
+    this->name=name;
+
+    cout<<this->name<<endl;
+    cout<<this->legs<<endl;
   }
 };
 
 int main()
 {
-  Animal a("cat");
+  Animal a(4,"cow");
 
-  cout<<a.name;
+  Animal b(a);
+ 
+
+
+  cout<<b.legs<<endl;
+  cout<<b.name<<endl;
+
 
 
   return 0;
