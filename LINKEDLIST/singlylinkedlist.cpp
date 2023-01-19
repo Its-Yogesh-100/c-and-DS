@@ -22,9 +22,20 @@ void InsertAtHead(Node* &head,int data)
     // creating a newnode;
 
     Node* temp=new Node(data);
-    temp->next=head;
+    temp->next=head; 
     head=temp;
 }
+
+void InsertAtTail(Node* &tail,int data)
+{
+    Node* temp=new Node(data);
+    tail->next=temp;
+    //or 
+    // tail=temp;
+    tail=tail->next;
+}
+
+void InserAtMiddle()
 
 void print(Node* &head)
 {
@@ -47,10 +58,15 @@ int main()
   Node *node1=new Node(20);
 // head pointed to node1
   Node* head=node1;
+// creating a tail
+  Node* tail=node1;
+
 
   print(head);
 
-  InsertAtHead(head,30);
+//   InsertAtHead(head,30);
+
+    InsertAtTail(tail,30);
   print(head);
 
  
