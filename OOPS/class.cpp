@@ -58,6 +58,8 @@ using namespace std;
 // }
 
 
+//  this is a pointer that is 
+//  pointing to object
 class Animal{
 
   public:
@@ -68,11 +70,19 @@ class Animal{
   {
     cout<<"Animal constructor";
   }
+
+  Animal(string type)
+  {
+    cout<<"this is name"<<endl;
+      this->name=type;
+  }
 };
 
 int main()
 {
-  Animal a;
+  Animal a("cat");
+
+  cout<<a.name;
 
 
   return 0;
