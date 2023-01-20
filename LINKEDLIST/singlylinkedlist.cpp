@@ -143,7 +143,7 @@ int main()
 
     // DELETING NODE
 
-    DeleteNode(head,2);
+    DeleteNode(head,5);
 
     print(head);
 
