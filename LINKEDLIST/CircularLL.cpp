@@ -16,7 +16,7 @@ class Node{
     }
 };
 
-void InsertAtHead(Node*&tail,int data)
+void InsertAtHead(Node*&tail,int element,int data)
 {
     // if list is empty
     if(tail==NULL)
@@ -28,7 +28,15 @@ void InsertAtHead(Node*&tail,int data)
     else{
 
         Node*current=tail;
-        
+
+        while(current->data!=element){
+            current=current->next;
+        }
+
+        Node *newnode=new Node(data);
+
+        newnode->next=current->next;
+        current->next=newnode;
     }
 }
 void print()
@@ -37,9 +45,9 @@ void print()
 }
 int main()
 {
-    Node * node1=new Node(10);
-
-    Node* tail=node1;
+    
+    Node* tail=NULL;
+    
     
 return 0;
 }
