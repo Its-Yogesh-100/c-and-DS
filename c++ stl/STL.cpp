@@ -276,6 +276,17 @@ void list_Container()
 
 }
 
+
+
+void DQ(){
+  
+  // Exactly similar to list and vector
+  deque<int> d;
+
+  
+
+}
+
 int main()
 {
     //Vectors();
