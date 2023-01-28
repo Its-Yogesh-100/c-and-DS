@@ -292,6 +292,8 @@ void Stack(){
 
  // follows last in  first out strategy
 
+ // everything happens in big1
+
  stack<int>s;
  s.push(1);
  s.push(2);
@@ -309,6 +311,29 @@ stack<int>k;
 k.swap(s);
 cout<<k.top()<<endl;
 }
+
+void Queue(){
+
+    // this is fifo data structe first in first out
+
+    queue<int>q;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+    q.push(4);
+    q.emplace(30);
+
+    cout<<q.back()<<endl;
+
+    q.pop();
+
+
+    cout<<q.front()<<endl;
+
+
+
+
+}
 int main()
 {
     //Vectors();
@@ -319,6 +344,8 @@ int main()
 
     //list_Container();
     
-    Stack();
+    //Stack();
+
+    Queue();
     return 0;
 }
