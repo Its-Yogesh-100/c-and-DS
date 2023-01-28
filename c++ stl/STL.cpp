@@ -242,12 +242,48 @@ void Vector_other_func()
 
 }
 
+
+
+void list_Container()
+{
+
+    // Same like vector but gives u front operation.Same way of declaration 
+
+    // it is a doubly linked list whereas vecot is singly linked list
+
+   list<int>ls;
+   ls.push_back(20);
+   ls.emplace_back(56);
+
+   ls.push_front(5);
+    
+   for(auto i:ls)
+    cout<<i<<" ";
+    cout<<endl;
+
+    ls.emplace_front(2000);
+       for(auto i:ls)
+    cout<<i<<" ";
+    cout<<endl;
+
+
+    // rest of the function are same
+
+    // insert function in  vector is very costly
+
+
+
+
+}
+
 int main()
 {
     //Vectors();
 
     // VectorsDeletion();
 
-    Vector_other_func();
+   // Vector_other_func();
+
+    list_Container();
     return 0;
 }
