@@ -283,10 +283,32 @@ void DQ(){
   // Exactly similar to list and vector
   deque<int> d;
 
-  
+
 
 }
 
+
+void Stack(){
+
+ // follows last in  first out strategy
+
+ stack<int>s;
+ s.push(1);
+ s.push(2);
+ s.push(3);
+ s.push(4);
+ s.emplace(5);
+
+cout<<s.top()<<endl;
+
+s.pop();
+cout<<s.top()<<endl;
+
+
+stack<int>k;
+k.swap(s);
+cout<<k.top()<<endl;
+}
 int main()
 {
     //Vectors();
@@ -295,6 +317,8 @@ int main()
 
    // Vector_other_func();
 
-    list_Container();
+    //list_Container();
+    
+    Stack();
     return 0;
 }
