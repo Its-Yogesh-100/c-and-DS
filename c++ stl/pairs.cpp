@@ -118,7 +118,7 @@ void Vectors()
 
     ////////another iterator
 
-    //vector<int>::iterator it = y.end();
+    // vector<int>::iterator it = y.end();
 
     // remember it iterator in this is not pointing towards the end element of memory
 
@@ -132,42 +132,122 @@ void Vectors()
 
     //*******************************************************
 
-
-    cout<<y[0]<<" "<<y.at(0)<<endl;
+    cout << y[0] << " " << y.at(0) << endl;
 
     // cout < "y.back" << y.back() << endl;
 
-
-    cout<<"y.back "<<y.back()<<endl;
+    cout << "y.back " << y.back() << endl;
 
     // accessing the value of vector using loop and iterator
 
+    for (vector<int>::iterator it = y.begin(); it != y.end(); it++)
+    {
 
-    for(vector<int>::iterator it=y.begin();it!=y.end();it++){
-
-        cout<<" "<<*(it)<<" ";
+        cout << " " << *(it) << " ";
     }
 
     // another sortcut to write this is
 
     // auto helps to write data type if you dont know about that data type
-    
-    cout<<endl;
-    for(auto it=y.begin();it!=y.end();it++)
+
+    cout << endl;
+    for (auto it = y.begin(); it != y.end(); it++)
     {
-       cout<<*(it)<<" ";
+        cout << *(it) << " ";
     }
 
     // another way is to print is for each loop
 
-    for(auto it:y){
-        cout<<it<<" ";
+    for (auto it : y)
+    {
+        cout << it << " ";
     }
 
-    
+    //**********************************************************************************
 }
+
+void VectorsDeletion()
+{
+
+    vector<int> v(5, 56);
+
+    cout << endl;
+    for (auto it : v)
+        cout << it << ' ';
+    cout << endl;
+
+    // Now we will talk about the erase function in vectors
+
+    v.erase(v.begin() + 1);
+
+    // another way to delete elements from the vector
+
+    v.erase(v.begin() + 2, v.begin() + 4);
+}
+
+void Vector_other_func()
+{
+    // INSERT FUNCTION IN VECOTROS
+
+    vector<int> v = {10, 20, 30, 40, 50};
+
+    v.insert(v.begin(),500);
+
+    for(auto i:v)
+    cout<<i<<" ";
+    cout<<endl;
+
+
+    // Another way to print the function in the array
+
+    v.insert(v.begin()+1,2,23);
+
+    for(auto i:v)
+    cout<<i<<" ";
+    cout<<endl;
+
+    // How u cna insert a vector inside another vector in c++
+
+    vector<int>c1={50,50};
+
+    v.insert(v.begin(),c1.begin(),c1.end());
+
+    for(auto i:v)
+    cout<<i<<" ";
+    cout<<endl;
+
+    // v.size() tells u how many elements in vector
+
+    cout<<v.size()<<endl;
+
+    v.swap(c1);
+
+    for(auto i:v)
+    cout<<i<<" ";
+    cout<<endl;
+
+
+  v.clear();
+
+
+  cout<<v.empty()<<endl;
+
+
+
+
+
+
+
+
+
+}
+
 int main()
 {
-    Vectors();
+    //Vectors();
+
+    // VectorsDeletion();
+
+    Vector_other_func();
     return 0;
 }
