@@ -31,7 +31,7 @@ class Cqueue{
         else if(rare==size-1 && front!=0)
         {
             rare=0;
-            arr[rear]=data;
+            arr[rare]=data;
 
         }
         else{
