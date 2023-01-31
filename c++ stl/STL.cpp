@@ -334,6 +334,14 @@ void Queue(){
 
 
 }
+
+
+
+void PriorityQueue()
+{
+
+
+}
 int main()
 {
     //Vectors();
@@ -346,6 +354,10 @@ int main()
     
     //Stack();
 
-    Queue();
+    //Queue();
+
+    PriorityQueue();
+
+
     return 0;
 }
