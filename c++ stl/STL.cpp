@@ -342,6 +342,12 @@ void PriorityQueue()
 
 
 }
+
+
+void mapf(){
+
+
+}
 int main()
 {
     //Vectors();
@@ -356,7 +362,33 @@ int main()
 
     //Queue();
 
-    PriorityQueue();
+    //PriorityQueue();
+
+
+    // map<int,int> mpp;
+
+    // mpp[1]=30;
+    // mpp.insert({1,20});
+    // mpp.insert({3,4});
+
+    // mpp.insert({3,45});
+
+    // for(auto it: mpp)
+    // cout<<endl<<" key "<<it.first<<" value "<<it.second<<endl;
+
+
+    // ALL PERMUTATOIN OF A STRING
+
+    string k="123";
+
+    do{
+        cout<<k<<endl;
+    }
+    while (next_permutation(k.begin(),k.end()));
+
+    
+    cout<<k.length();
+
 
 
     return 0;
