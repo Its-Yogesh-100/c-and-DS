@@ -9,11 +9,10 @@ using namespace std;
 int main()
 {
 
-int arr[5]={10,20,30,4,5};
+vector<int> v={10,20,30,40,50,0};
+  cout<<v.find(10);
 
-vector<int> s(begin(arr),end(arr));
+  cout<<"HELLO";
 
-for(auto it:s)
-cout<<it<<" ";
 return 0;
 }
