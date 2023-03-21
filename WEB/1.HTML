@@ -6,35 +6,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+
+ 
+
   <style>
     .d{
-      border: 2px solid yellow;
+
+      background-color: tomato !important;
+      color: rgb(4, 4, 4);
+      border: 5px solid yellow;
       border-radius: 10px;
       text-align: center;
       width: 382px;
       height: 150px;
 
+      font-weight: bold;
+      font-family: "comic sans MS",monospace;
+
       display:inline-block;
+
+      box-shadow: -5px -10px 0px 2px rgb(143, 126, 126) ;
 
     }
 
 
     .pp{
 
-      margin-top: 10px;
-      border: 2px solid yellow;
-      border-radius: 11px 2px 3px 4px;
+      background-color: chartreuse;
+      margin-top: 20px;
+      border: 5px solid rgb(0, 0, 0);
+      border-radius: 20px;
       text-align: center;
       width: 382px;
       height: 150px;
 
-
       
     }
+
+    img{
+      
+      float: right;
+      margin: 20px;
+      padding: 20px;
+      border: 5px solid white;
+
+      /*transform:translate(500px,-40px);*/
+
+      /*transform:scale(1,1);*/
+
+
+      /* transform:rotate(20deg); */
+
+  
+    }
+
+    #k{
+      margin: 10px,20px,10px,20px;
+      align-content: center;
+      padding: 0px;
+    }
+
+
+   button{
+    
+    transition: 4s step-end(4);
+  }
+
+ 
+  @keyframes anim
+{
+     to {color: white;background:black;}
+     from {color: black;background:white;}
+}
+
+
+
   </style>
 </head>
 
-<body style="color:red; text-transform: capitalize;">
+<body style="background-color: rgb(86, 6, 6);" >
 
   <h3>Box Model</h3>
   <div class="d">
@@ -52,6 +102,15 @@
     <p>this is the content inside the box model</p>
     <p>this is the content inside the box model</p>
   </div>
+
+
+  <div id="k">
+    <img src="2Q.jpg" alt="">
+    <img src="2Q.jpg" alt="">
+  </div>
+
+
+
   
 </body>
 </html>
